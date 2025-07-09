@@ -38,6 +38,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Install Dependencies
+        run: npm install
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
